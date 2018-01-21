@@ -1,6 +1,6 @@
 name 'base'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Matt Feng'
+maintainer_email 'matt.feng@yahoo.com'
 license 'All Rights Reserved'
 description 'Installs/Configures base'
 long_description 'Installs/Configures base'

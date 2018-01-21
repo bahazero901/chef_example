@@ -1,4 +1,4 @@
 # base
 
-TODO: Enter the cookbook description here.
+TODO: Testing out Chef.
 
