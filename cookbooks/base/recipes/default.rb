@@ -30,7 +30,7 @@ end
 
 #excuting a command
 execute 'just a test' do
-  command "echo hi > /tmp/test.txt"
+  command "echo hi >> /tmp/test.txt"
   action :run
 end
 
