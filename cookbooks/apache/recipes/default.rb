@@ -8,12 +8,20 @@ package 'tree' do
   action [:install]
 end
 
+#using node attributes (ohai)
+if node['platform_family'] == "rhel"
+  package = "httpd"
+elsif node['platform_family'] == 'debian'
+  package = "apache2"
+end
+
 package 'apache' do
-  package_name 'httpd'
+  #using node attributes to set a variable
+  package_name package
   action :install
 end
 
-service 'httpd' do
+service package do
   action [:enable, :start]
 end
 
@@ -32,5 +40,4 @@ user 'mfeng' do
   shell '/bin/zsh'
   action :create
 end 
-
 
