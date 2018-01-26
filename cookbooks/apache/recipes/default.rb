@@ -6,17 +6,17 @@
 
 #using node attributes (ohai)
 if node['platform_family'] == "rhel"
-  package = "httpd"
+  web_package = "httpd"
 elsif node['platform_family'] == 'debian'
-  package = "apache2"
+  web_package = "apache2"
 end
 
 package 'apache' do
   #using node attributes to set a variable
-  package_name package
+  package_name web_package
   action :install
 end
 
-service package do
+service web_package do
   action [:enable, :start]
 end

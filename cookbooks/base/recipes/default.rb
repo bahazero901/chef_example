@@ -4,6 +4,9 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
+package 'net-tools' do
+end
+
 package 'tree' do
   action [:install]
 end
@@ -27,3 +30,10 @@ user 'mfeng' do
   action :create
 end 
 
+file '/etc/motd' do
+  content "The hostname: #{node['hostname']}"
+end
+
+#set journalling to permanent
+#mkdir /var/log/journal
+## echo "SystemMaxUse=50M" >> /etc/systemd/journald.conf

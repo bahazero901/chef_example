@@ -16,3 +16,19 @@ end
 describe port(80), :skip do
   it { should_not be_listening }
 end
+
+#test to see if the packages are installed
+['httpd'].each do |pkg|
+  describe package(pkg) do
+    it { should be_installed }
+  end
+end
+
+describe user('webadmin') do
+    it { should exist }
+    its('group') { should eq 'developers' }
+end
+
+describe group('developers') do
+    it { should exist }
+end

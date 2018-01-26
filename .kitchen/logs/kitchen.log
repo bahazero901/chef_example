@@ -1,0 +1,29 @@
+I, [2018-01-25T23:57:40.386440 #23568]  INFO -- Kitchen: -----> Starting Kitchen (v1.19.2)
+E, [2018-01-25T23:57:40.386794 #23568] ERROR -- Kitchen: ------Exception-------
+E, [2018-01-25T23:57:40.386830 #23568] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2018-01-25T23:57:40.386854 #23568] ERROR -- Kitchen: Message: Kitchen YAML file /home/vagrant/chef-repo/.kitchen.yml does not exist.
+E, [2018-01-25T23:57:40.386876 #23568] ERROR -- Kitchen: ----------------------
+E, [2018-01-25T23:57:40.386897 #23568] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-01-25T23:57:40.386917 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2018-01-25T23:57:40.386938 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/config.rb:152:in `data'
+E, [2018-01-25T23:57:40.386959 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/config.rb:131:in `suites'
+E, [2018-01-25T23:57:40.386986 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2018-01-25T23:57:40.387007 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/config.rb:141:in `build_instances'
+E, [2018-01-25T23:57:40.387028 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/config.rb:117:in `instances'
+E, [2018-01-25T23:57:40.387048 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2018-01-25T23:57:40.387068 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2018-01-25T23:57:40.387089 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command/test.rb:40:in `block in call'
+E, [2018-01-25T23:57:40.387109 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-01-25T23:57:40.387129 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/command/test.rb:38:in `call'
+E, [2018-01-25T23:57:40.387149 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2018-01-25T23:57:40.387170 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/cli.rb:245:in `test'
+E, [2018-01-25T23:57:40.387194 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2018-01-25T23:57:40.387216 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-25T23:57:40.387237 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2018-01-25T23:57:40.387257 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2018-01-25T23:57:40.387277 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2018-01-25T23:57:40.387298 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2018-01-25T23:57:40.387318 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.19.2/bin/kitchen:13:in `<top (required)>'
+E, [2018-01-25T23:57:40.387350 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/bin/kitchen:23:in `load'
+E, [2018-01-25T23:57:40.387392 #23568] ERROR -- Kitchen: /opt/chefdk/embedded/bin/kitchen:23:in `<main>'
+E, [2018-01-25T23:57:40.387413 #23568] ERROR -- Kitchen: ----End Backtrace-----
